@@ -15,11 +15,11 @@ concurrency:
 
 env:
   REGISTRY: ghcr.io
-  # list all the docker file in your repository here and reference the parent/main branch
+  # list all the docker file in your repository here and reference the parent/main branch.
 
   SERVICES: backend,transactions,studentportfolio,syncer
   TARGET_BRANCH: main
- # Declaring the jobs that we want our runner to run. We want it to build and push the images to our gitops repo
+ # Declaring the jobs that we want our runner to run. We want it to build and push the images to our gitops repo.
 jobs:
   build-and-push:
     name: Build & Push Images
